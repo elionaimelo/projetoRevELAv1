@@ -1,6 +1,10 @@
-#### Template para projetos estáticos
+#### Projeto RevELA - Cuidadores na Assistência ao Paciente – Cuidados respiratórios na ELA 
 
-É preciso instalar algumas depedências
+
+![Image do recurso](src/images/recurso-markdown.png)
+
+
+É preciso instalar algumas depedências(caso não tenha instalado)
 
 node [https://nodejs.org/download](https://nodejs.org/download/).
 
