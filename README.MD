@@ -1,4 +1,4 @@
-#### Projeto RevELA - Cuidadores na Assistência ao Paciente – Cuidados respiratórios na ELA 
+## Projeto RevELA - Cuidadores na Assistência ao Paciente – Cuidados respiratórios na ELA 
 
 
 ![Image do recurso](src/images/recurso-markdown.png)
@@ -19,6 +19,12 @@ depois execute o comando para instalar todas as outras dependências do projeto
 ```
 npm i
 ```
+
+#### Informações
+
+Para inserir arquivos baixados com o gerenciador de pacotes acesse o gulpfile.js e a função **copyAssets**
+
+Para ordernar o script acesse o gulpfile.js e procure pela função **javascript**
 
 #### Alguns comandos para o projeto
 
