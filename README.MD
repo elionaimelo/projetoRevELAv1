@@ -1,13 +1,15 @@
 ## Projeto RevELA - Cuidadores na Assistência ao Paciente – Cuidados respiratórios na ELA 
 
-#### Informações úteis para distribuição
-
-O Conteúdo que está no diretório **dist** vai ser compartilhado. O que está no **src** é usado apenas para desenvolvimento
-
 Repositório [https://github.com/elionaimelo/projetoRevELAv1](https://github.com/elionaimelo/projetoRevELAv1).
+
+#### Informações úteis para distribuição/compartilhamento
+
+O Conteúdo que está no diretório **dist** é o que será compartilhado. O que está no **src** é usado apenas para desenvolvimento.
 
 ![Image do recurso](src/images/recurso-markdown.png)
 
+
+#### Informações úteis para o desenvolvimento
 
 É preciso instalar algumas depedências(caso não tenha instalado)
 
@@ -24,8 +26,6 @@ depois execute o comando para instalar todas as outras dependências do projeto
 ```
 npm i
 ```
-
-#### Informações úteis para o desenvolvimento
 
 Todos os scripts serão concatenados e minificados, portanto, é importante saber das informações abaixo
 
