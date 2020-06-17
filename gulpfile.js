@@ -217,7 +217,7 @@ gulp.task("watch", gulp.parallel(watchFiles, browserSync));
 // default task
 gulp.task(
   "default",
-  gulp.series(copyAssets, html, imageMin, fonts, css, javascript, "watch"),
+  gulp.series(/*copyAssets,*/ html, imageMin, fonts, css, javascript, "watch"),
   function (done) {
     done();
   }
@@ -226,5 +226,5 @@ gulp.task(
 // build
 gulp.task(
   "build",
-  gulp.series(copyAssets, html, imageMin, fonts, css, javascript)
+  gulp.series(/*copyAssets,*/ html, imageMin, fonts, css, javascript)
 );
