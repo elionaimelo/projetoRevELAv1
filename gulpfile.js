@@ -24,41 +24,41 @@ const folder = {
 Copiando arquivos da pasta dele no node_modules para o diretório js do projeto
 */
 
-// function copyAssets(done) {
-//   var assets = {
-//     js: [
-//       // "./node_modules/jquery/dist/jquery.slim.js",
-//       // "./node_modules/bootstrap/dist/js/bootstrap.bundle.js",
-//     ],
-//   };
-//   //adicionar outras dependecias, ou seja, qlq outro jquery fora os padrões. Exemplo abaixo
-//   var third_party_assets = {
-//     css_js: [
-//       // { "name": "custombox", "assets": ["./node_modules/custombox/dist/custombox.min.js", "./node_modules/custombox/dist/custombox.min.css"] },
-//     ],
-//   };
+function copyAssets(done) {
+  var assets = {
+    js: [
+      "./node_modules/jquery/dist/jquery.slim.js",
+      "./node_modules/bootstrap/dist/js/bootstrap.bundle.js",
+    ],
+  };
+  //adicionar outras dependecias, ou seja, qlq outro jquery fora os padrões. Exemplo abaixo
+  var third_party_assets = {
+    css_js: [
+      // { "name": "custombox", "assets": ["./node_modules/custombox/dist/custombox.min.js", "./node_modules/custombox/dist/custombox.min.css"] },
+    ],
+  };
 
 //   //copying third party assets
-//   lodash(third_party_assets).forEach(function (assets, type) {
-//     if (type == "css_js") {
-//       lodash(assets).forEach(function (plugin) {
-//         var name = plugin["name"];
-//         var assetlist = plugin["assets"];
-//         lodash(assetlist).forEach(function (asset) {
-//           gulp.src(asset).pipe(gulp.dest(folder.dist_assets + "libs/" + name));
-//         });
-//       });
-//       //gulp.src(assets).pipe(gulp.dest(folder.dist_assets + "css/vendor"));
-//     }
-//   });
+  lodash(third_party_assets).forEach(function (assets, type) {
+    if (type == "css_js") {
+      lodash(assets).forEach(function (plugin) {
+        var name = plugin["name"];
+        var assetlist = plugin["assets"];
+        lodash(assetlist).forEach(function (asset) {
+          gulp.src(asset).pipe(gulp.dest(folder.dist_assets + "libs/" + name));
+        });
+      });
+      //gulp.src(assets).pipe(gulp.dest(folder.dist_assets + "css/vendor"));
+    }
+  });
 
-//   //copiando os arquivos obrigatórios
-//   lodash(assets).forEach(function (assets, type) {
-//     gulp.src(assets).pipe(gulp.dest(folder.src + "js/vendor"));
-//   });
+  //copiando os arquivos obrigatórios
+  lodash(assets).forEach(function (assets, type) {
+    gulp.src(assets).pipe(gulp.dest(folder.src + "js/vendor"));
+  });
 
-//   done();
-// }
+  done();
+}
 
 // imagem minificada
 function imageMin() {
