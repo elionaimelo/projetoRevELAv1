@@ -1,10 +1,39 @@
-
-header {
-  padding: 20px 0;
-  width: 100%;
+header{
   background-color: #9c94e0;
-
-  h1 {
-    line-height: 60px;
+  .header {
+    padding: 20px 0;
+    width: 100%;
+  
+  
+    h1 {
+      line-height: 60px;
+    }
   }
+  
+  .accessibility-bar-wrapper {
+    position: relative;
+    background-color: #574f9a;
+    color: white;
+    min-height: 20px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    width: 100%;
+    font-size: .7em;
+
+    a {
+      color: white;
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+
+    .numero-acessibilidade {
+      background-color: white;
+      color: #574f9a;
+      padding: 0 2px 0 3px;
+      margin-right: 4px;
+  
+    }
+  }
+  
 }
